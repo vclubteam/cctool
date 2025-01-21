@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 # Replace these with your actual credentials
 API_ID = "18618422"
 API_HASH = "f165b1caec3cfa4df943fe1cbe82d22a" 
-BOT_TOKEN = "7331020753:AAHXlijTbzyyQvW-Ek6tOpXXXlVxa0DoX0k"
+BOT_TOKEN = "7566387561:AAFLPJOiteiyqf8c4BXWVhm7KuPOlWV4aho"
 
 # Initialize the bot
 app = Client("cc_tools_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
