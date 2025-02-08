@@ -180,7 +180,7 @@ async def handle_document(client, message: Message):
             await message.reply_text("❌ **ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴏɴʟʏ `.ᴛxᴛ` ꜰɪʟᴇꜱ!**")
             return
 
-        file_path = f"file_{user_id}_{time.time()}.txt"
+        file_path = f"file_{user_id}_{int(time.time())}.txt"
         await message.download(file_path)
 
         user_data[user_id]["files"].append(file_path)
