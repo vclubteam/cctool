@@ -203,11 +203,11 @@ async def handle_document(client, message: Message):
 
             file_path = f"downloads/{file_path}"
             # Check file size
-            file_size = os.path.getsize(file_path)
-            if file_size > 300 * 1024 * 1024:  # 300 MB limit
-                await message.reply_text("❌ **ꜰɪʟᴇ ɪꜱ ᴛᴏᴏ ʟᴀʀɢᴇ! ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴀ ꜰɪʟᴇ ꜱᴍᴀʟʟᴇʀ ᴛʜᴀɴ 50 ᴍʙ.**")
-                Path(file_path).unlink(missing_ok=True)
-                return
+            #file_size = os.path.getsize(file_path)
+            #if file_size > 300 * 1024 * 1024:  # 300 MB limit
+            #    await message.reply_text("❌ **ꜰɪʟᴇ ɪꜱ ᴛᴏᴏ ʟᴀʀɢᴇ! ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴀ ꜰɪʟᴇ ꜱᴍᴀʟʟᴇʀ ᴛʜᴀɴ 50 ᴍʙ.**")
+            #    Path(file_path).unlink(missing_ok=True)
+            #    return
 
             with open(file_path, "r", encoding="utf-8") as f:
                 cards = f.read().splitlines()
