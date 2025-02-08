@@ -183,7 +183,7 @@ async def handle_document(client, message: Message):
         file_path = f"file_{user_id}_{int(time.time())}.txt"
         await message.download(file_path)
 
-        user_data[user_id]["files"].append(file_path)
+        user_data[user_id]["files"].append(f'downloads/{file_path}')
         files_count = len(user_data[user_id]["files"])
 
         await message.reply_text(
